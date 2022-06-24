@@ -20,7 +20,7 @@ const forecast = (lat, lng, callback) => {
             // });
             let currentWeather = (body.current.temperature - 32) * 0.5556 ;
             let feelsLike = (body.current.feelslike - 32) * 0.5556 ;
-            callback(undefined, `The weather is ${body.current.weather_descriptions[0]}. The temperature is ${temperature} and it feels like ${feelslike}.`);
+            callback(undefined, `The weather is ${body.current.weather_descriptions[0]}. The temperature is ${currentWeather} and it feels like ${feelsLike}.`);
 
         }
     })
